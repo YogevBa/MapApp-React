@@ -1,32 +1,114 @@
-.App {
-  text-align: center;
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
 }
 
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 40vmin;
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.app {
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  flex-wrap: wrap;
+  flex-direction: row;
+  height: 100vh;
+  width: 100vw;
+  font-size: 10px;
+}
+
+.contribution {
+  letter-spacing: 2px;
+  font-size: 9px;
+  float: right;
+  margin-right: 5px;
+  color: aquamarine;
+}
+
+.titleContainer {
+  width: 100%;
+  height: 5%;
+  background: #232323;
+}
+
+.title {
+  letter-spacing: 10px;
   color: white;
+  text-align: center;
+  font-size: 30px;
+  margin: auto;
 }
 
-.App-link {
-  color: #61dafb;
+.sideBar {
+  width: 20%;
+  height: 90%;
+  display: inline-table;
+  cursor: pointer;
+  position: relative;
+  background: #232323;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+input {
+  width: 100%;
+  height: 2rem;
+  font-size: 1rem;
+  background-color: floralwhite;
+}
+
+.venueList {
+  overflow: scroll;
+  background-color: #232323;
+  margin: 0;
+  padding: 5px;
+  color: #fff;
+  max-height: 96.5%;
+}
+
+ol li{
+  list-style-type: none;
+  font-size: 0.8rem;
+  padding: 0.5rem;
+  margin-top: 0.5rem;
+}
+
+
+#map {
+  position: absolute;
+  width: 80%;
+  height: 90%;
+}
+
+.footerContainer {
+  width: 100%;
+  height: 5%;
+  background: #232323;
+  color: white;
+  text-align: center;
+  font-size: 0.9em;
+}
+
+
+@media only screen and (max-width: 700px) {
+  #map {
+      width: 100%;
+      height: 70%;
   }
-  to {
-    transform: rotate(360deg);
+
+  .sideBar {
+    width: 100%;
+    height: 30%;
+  }
+
+  ol li {
+    font-size: 10px;
+    text-align: center;
+    margin-top: 0;
+    margin-bottom: 10px;
+  }
+
+  .title {
+    font-size: 10px;
+    letter-spacing: 5px;
+  }
+
+  .contribution {
+    font-size: 7px;
+    float: unset;
   }
 }
