@@ -1,5 +1,8 @@
 import React, { Component } from 'react';
 import { googleMaps, loadVenues} from './API'
+import Header from './Components/Header'
+import Footer from './Components/Footer'
+
 import './App.css';
 
 class App extends Component {
@@ -27,7 +30,7 @@ class App extends Component {
             zoom: 10
           });
 
-          venues.map(venue => {
+          venues.forEach(venue => {
             let marker = new google.maps.Marker({
               position: { lat: venue.location.lat, lng: venue.location.lng},
               map: this.map
@@ -38,7 +41,9 @@ class App extends Component {
   render() {
     return (
       <div className="App">
+      <Header/>
         <div id="map"></div>
+        <Footer/>
       </div>
     );
   }
