@@ -25,7 +25,6 @@ class App extends Component {
   .then((data) => {
     let google = data[0]
     this.setState({venues: data[1].response.venues})
-    console.log(this.state.venues)
 
     this.google = google
     this.infowindow = new google.maps.InfoWindow();

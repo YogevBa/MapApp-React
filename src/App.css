@@ -57,7 +57,7 @@ input {
   margin: 0;
   padding: 5px;
   color: #fff;
-  max-height: 96.5%;
+  max-height: 96%;
 }
 
 ol li{
@@ -80,6 +80,8 @@ ol li{
   color: white;
   text-align: center;
   font-size: 0.9em;
+  position: relative;
+  bottom: 0;
 }
 
 
@@ -108,6 +110,6 @@ ol li{
 
   .contribution {
     font-size: 7px;
-    float: unset;
+    float: right;
   }
 }

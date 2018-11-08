@@ -7,7 +7,6 @@ export function googleMaps() {
     }
 
     const script = document.createElement("script");
-    // const API_KEY = 'AIzaSyCmXX__nvLYo85WFMr-wcEnLPbBsehHkQg'
     script.src = 'https://maps.googleapis.com/maps/api/js?key=AIzaSyCmXX__nvLYo85WFMr-wcEnLPbBsehHkQg&callback=resolveGoogleMapsPromise';
     script.async = true;
     document.body.appendChild(script);
