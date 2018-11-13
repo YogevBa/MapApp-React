@@ -60,13 +60,12 @@ input {
   max-height: 96%;
 }
 
-ol li{
+ol li {
   list-style-type: none;
   font-size: 0.8rem;
   padding: 0.5rem;
   margin-top: 0.5rem;
 }
-
 
 #map {
   width: 80%;
@@ -84,11 +83,10 @@ ol li{
   bottom: 0;
 }
 
-
-@media only screen and (max-width: 700px) {
+@media only screen and (max-width: 770px) {
   #map {
-      width: 100%;
-      height: 70%;
+    width: 100%;
+    height: 70%;
   }
 
   .sideBar {
