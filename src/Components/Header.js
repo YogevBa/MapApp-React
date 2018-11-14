@@ -4,7 +4,7 @@ class Header extends Component {
   render() {
     return (
       <div className="titleContainer">
-      <h2 className="title">Tel-Aviv Pizza Places<span className="contribution">data provided by Foursquare</span></h2>
+      <h2 class="title">Tel-Aviv Pizza Places</h2>
       </div>
     )
   }
