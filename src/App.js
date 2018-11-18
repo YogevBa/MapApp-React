@@ -3,7 +3,6 @@ import { googleMaps, loadVenues} from './API'
 import Header from './Components/Header'
 import Footer from './Components/Footer'
 import SideBar from './Components/SideBar'
-
 import './App.css';
 
 class App extends Component {
